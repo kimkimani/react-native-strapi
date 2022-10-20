@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forgot Password</title>
+    
+    <style>
+        .container {
+            margin: 20px auto;
+            max-width: 800px;
+            padding: 10px;
+        }
+
+        .panel{
+            margin: 5px;
+            text-align: center;
+        }
+
+        .panel-heading h1{
+            padding: 10px;
+            font-size: 18px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .form{
+            margin: 10px;
+            border: 1px solid #d4d4d4;
+        }
+
+        .form-error{
+            width: 100%;
+            border: 1px solid red;
+            color: red;
+        }
+
+        .form-success{
+            width: 100%;
+            border: 1px solid green;
+            color: green;
+        }
+
+        .form-body{
+            width: 100%;
+            display: block;
+            margin: 10px;
+            
+        }
+
+        .form-body label{
+            width: 100%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .form-body input[type="password"]{
+            width: 95%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 5px;
+        }
+
+        .form-body .has-danger{
+            border: 1px solid red;
+        }
+
+        .form-body #password-helper-text{
+            margin-top: 4px;
+            color: red;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .form-body #confirm_password-helper-text{
+            margin-top: 4px;
+            color: red;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .form-body .submit-btn{
+            display: inline-block;
+            padding: 5px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            border: 1px solid #d4d4d4;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="panel">
+            <div class="panel-heading">
+                <h1>Hello, you are now resetting your password!!</h1>
+            </div>
+        </div>
+        
+        <div class="form">
+
+            <span class="form-error" id="form-error"></span>
+            <span class="form-success" id="form-success"></span>
+
+            <div class="form-body">
+                <label>New Password</label>
+                <input type="password" name="password" id="password" class="form-control" placeholder="Your new password" />
+                <span id="password-helper-text"></span>
+            </div>
+
+            <div class="form-body">
+                <label>New Password Confirmation</label>
+                <input type="password" name="confirm_password" id="confirm_password" class="form-control" placeholder="Confirm password" />
+                <span id="confirm_password-helper-text"></span>
+            </div>
+
+            <div class="form-body">
+                <input type="submit" class="submit-btn" id="submit-btn" value="Submit" />
+            </div>
+
+        </div>  
+
+    </div>
+    <script type="text/javascript" src="app.js"></script>
+</body>
+</html>
